@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support — Turn Pressure</title>
+<meta name="description" content="Help and contact for Turn Pressure, the dive gas planner.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+
+<header>
+  <h1>Support</h1>
+  <p>Turn Pressure — dive gas planner</p>
+</header>
+
+<p>Something wrong, or a number you disagree with? Write to
+<a href="mailto:ligrimp@gmail.com">ligrimp@gmail.com</a>. If it is about a specific plan,
+include the depth, cylinder, mix and air number you used — that is enough to reproduce
+any figure the app shows.</p>
+
+<h2>Common questions</h2>
+
+<h3>Why is my minimum gas so much larger than 50 bar?</h3>
+
+<p>Because it is computed for your depth and your cylinder rather than being a fixed
+number. Two divers sharing one supply from 30 m need a fixed <em>volume</em> of gas, and a
+small cylinder turns that volume into a much larger fraction of its pressure. The same
+ascent that needs 84 bar from a 15-litre needs 113 from an aluminium 80. That gap is
+what the app was built to show.</p>
+
+<h3>Your bottom-time limit doesn't match my computer.</h3>
+
+<p>It probably will once you match the conservatism. Settings &rsaquo; How the bottom-time
+limit is worked out offers the standard gradient-factor pairs — 30/70 through 100/100 —
+and the app defaults to 40/85. Set it to whatever your computer is running.</p>
+
+<p>Two differences will remain even then. The app plans a square profile to your maximum
+depth, while your computer follows the dive you actually did, so its number will usually
+be more generous. And the app assumes a repeat dive followed a full dive to the same
+depth on the same gas, because it has no way to know what you really did. Both differences
+run in the same direction: the app is the more cautious of the two.</p>
+
+<h3>How does it know what I breathe?</h3>
+
+<p>Only what you tell it. Pick a tier if you have never measured it, enter one real dive's
+numbers and let it work the rate out, or type a figure you already know. Everything you
+enter stays in a dated list, the newest is used, and you can pin an older one or delete
+any of them.</p>
+
+<h3>Does it work without a signal?</h3>
+
+<p>Always. The app has no network access at all, so a boat with no reception changes
+nothing.</p>
+
+<h3>Will it tell me a dive is safe?</h3>
+
+<p>No, and it never will. It does gas arithmetic and a bottom-time limit before you get in.
+Your training comes first, and in the water you go by your pressure gauge and your
+computer.</p>
+
+<footer>
+  <p>&copy; 2026 Rustam Ismailov</p>
+  <p><a href="index.html">Turn Pressure</a> &middot; <a href="privacy.html">Privacy</a></p>
+</footer>
+
+</main>
+</body>
+</html>
