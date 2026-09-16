@@ -11,8 +11,20 @@ listing. A reviewer opens both.
 - Landing page — `index.html`
 
 Plain static HTML, served by GitHub Pages from `main` / root. No build step.
-The canonical policy text lives with the app, in `docs/privacy-policy.md`; keep
-the two in step.
+
+## This folder is the source — the GitHub repo is a publishing target
+
+The pages live in the `turn_pressure` repository, at `turnpressure-site/`, and moved
+there on 2026-08-26 because no project file lives outside the project folder. Edit them
+here. `ligrimp-lang/turnpressure-site` is where they get published to, and a clone of it
+is not a place to make changes — that is the drift this arrangement removes.
+
+    .claude/skills/ship/scripts/publish-site.sh turn-pressure --dry-run   # what would change
+    .claude/skills/ship/scripts/publish-site.sh turn-pressure             # commit and push
+
+It refuses to publish uncommitted changes, so what is on the web always names a commit in
+the project repository. The privacy policy text has no second copy anywhere — `privacy.html`
+is it.
 
 ---
 

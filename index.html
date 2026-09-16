@@ -3,52 +3,119 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Turn Pressure — dive gas planner for iPhone</title>
-<meta name="description" content="Minimum gas, turn pressure and bottom time, computed for your depth, your cylinder and what you actually breathe. Free, offline, no account.">
+<title>Turn Pressure — dive planner &amp; gas calculator for iPhone</title>
+<meta name="description" content="Minimum gas, turn pressure, NDL and bottom time, computed for your depth, your cylinder, your nitrox and your own SAC rate. Free dive calculator and dive log for iPhone. Offline, no account.">
+<link rel="canonical" href="https://ligrimp-lang.github.io/turnpressure-site/">
+<meta name="apple-itunes-app" content="app-id=6801749776">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Turn Pressure — dive planner &amp; gas calculator for iPhone">
+<meta property="og:description" content="Minimum gas, turn pressure, NDL and bottom time, computed for your depth, your cylinder and your nitrox. Free, offline, no account.">
+<meta property="og:url" content="https://ligrimp-lang.github.io/turnpressure-site/">
+<meta property="og:site_name" content="Turn Pressure">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Turn Pressure — dive planner &amp; gas calculator for iPhone">
+<meta name="twitter:description" content="Minimum gas, turn pressure, NDL and bottom time, computed for your depth, your cylinder and your nitrox. Free, offline, no account.">
+
 <link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Turn Pressure",
+  "operatingSystem": "iOS",
+  "applicationCategory": "SportsApplication",
+  "url": "https://ligrimp-lang.github.io/turnpressure-site/",
+  "description": "Minimum gas, turn pressure, NDL and bottom time for recreational scuba diving, computed for your depth, your cylinder and your nitrox mix.",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Rustam Ismailov"
+  }
+}
+</script>
 </head>
 <body>
 <main>
 
 <header>
   <h1>Turn Pressure</h1>
-  <p>Gas planning that scales with the dive</p>
+  <p>Dive planner &amp; gas calculator for iPhone</p>
 </header>
 
-<p>Most recreational divers never plan their gas. They surface on 50 bar because that is
-the habit — and the habit does not change with depth, or cylinder, or who they are diving
-with.</p>
+<p class="cta">
+  <a href="https://apps.apple.com/app/id6801749776">Download on the App Store</a>
+</p>
+<p class="cta-note">Free. iPhone, iOS 17 and later. No account, no ads, no analytics.</p>
 
-<p>Turn Pressure does that arithmetic. Tell it how deep, what you are carrying and what you
-breathe, and it gives you the pressure to turn on, the gas you have to keep back to get two
-people up, and how long you can stay.</p>
+<p>Most recreational divers were taught one number: surface on 50 bar, no matter the depth,
+the cylinder, or who they're diving with. It's not that nobody plans — it's that the plan
+never changes with the dive.</p>
+
+<p>Turn Pressure runs the actual numbers instead. Tell it how deep you're going, what
+cylinder you're carrying and who's breathing it, and it gives you a <strong>turn
+pressure</strong>, the <strong>minimum gas</strong> to get two divers up from the deepest
+point, an <strong>NDL</strong> or bottom-time limit, and how long you can stay at maximum
+depth — before you kit up.</p>
 
 <h2>What it does</h2>
 
 <ul>
-  <li><strong>Minimum gas</strong> computed for your depth and your cylinder — the same
-  ascent needs 84 bar from a 15-litre and 113 from an aluminium 80.</li>
-  <li><strong>Turn pressure</strong> on thirds, halves or all-usable.</li>
-  <li><strong>Bottom-time limit</strong> from Bühlmann ZH-L16C, for air and every nitrox
-  mix, with the gradient factors set to match your computer.</li>
-  <li><strong>Your own air number</strong>, worked out from your own dives and tracked
-  over time.</li>
-  <li><strong>Metric and imperial</strong>, in the numbers each is actually dived in —
-  100 ft and AL80, not 98 ft and "81 cu ft".</li>
-  <li><strong>Saved briefs</strong> for the dives you do often.</li>
+  <li><strong>Minimum gas</strong> that scales with your cylinder — the same ascent from
+  30 m needs 64 bar out of a 15-litre steel and 86 bar out of an aluminium 80. Not a flat
+  reserve.</li>
+  <li><strong>Turn pressure</strong> on thirds, halves or all-usable gas.</li>
+  <li><strong>NDL / bottom-time limit</strong> from Bühlmann ZH-L16C, for air and every
+  nitrox mix (EAN28, EAN32, EAN36), with gradient-factor presets from 15/85 and 30/70 to
+  100/100, defaulting to 40/85, so you can match your dive computer.</li>
+  <li><strong>An ascent you can brief</strong> — a ladder of levels, each a depth to hold
+  or be shallower than, drawn and labelled on the chart, at an ascent rate you choose from
+  3 to 9 m/min.</li>
+  <li><strong>Time at maximum depth</strong>, set on a slider up to the most your gas and
+  your NDL allow — and when the NDL caps the deep part of the dive, the plan spends what's
+  left at 9 m instead of sending you up with a full-looking gauge.</li>
+  <li><strong>Repeat dives</strong> that use the dive you actually did — the depth and time
+  you enter, run back through the same tissue model, not a flat percentage knocked off the
+  limit.</li>
+  <li><strong>Your own SAC rate</strong>, typed, worked out from one real dive, or started
+  from a tier — kept as a dated list with a trend chart.</li>
+  <li><strong>A dive log</strong> — sites, conditions, notes, photos and buddies present,
+  because it's what your SAC rate and your repeat-dive question are built on.</li>
+  <li><strong>Metric and imperial</strong>, in the numbers each is actually dived in — 100 ft
+  and AL80, not 98 ft and "81 cu ft".</li>
+  <li><strong>Saved briefs</strong> for the dives you run over and over.</li>
 </ul>
 
 <h2>What it does not do</h2>
 
 <p>No account. No ads. No analytics. No network access at all — everything stays on your
-phone.</p>
+phone. It's a no-stop, recreational planner: it doesn't plan decompression dives, stage
+gases or bailout, and it isn't meant to run during the dive — plan with it on the boat or
+the night before, then go by your gauge and your computer in the water.</p>
 
 <p>Your training comes first. In the water, go by your pressure gauge and your computer.
-This app helps with the mathematics and accepts no liability for any dive.</p>
+This app helps with the arithmetic and accepts no liability for any dive.</p>
+
+<h2>Worked examples</h2>
+
+<p>Real figures from the app, for dives divers actually ask about:</p>
+
+<ul>
+  <li><a href="plan/minimum-gas-30m.html">Minimum gas from 30 m: aluminium 80 vs. 15-litre steel</a></li>
+  <li><a href="plan/minimum-gas-40m.html">Minimum gas from 40 m: aluminium 80 vs. 15-litre steel</a></li>
+  <li><a href="plan/ndl-18m-air.html">NDL for an 18 m reef dive on air</a></li>
+  <li><a href="plan/ndl-24m-ean32.html">NDL and turn pressure for a 24 m wreck dive on EAN32</a></li>
+  <li><a href="plan/repetitive-dive-18m.html">Repetitive dive at 18 m: fresh vs. an hour after a 30 m dive</a></li>
+</ul>
 
 <footer>
   <p>&copy; 2026 Rustam Ismailov</p>
-  <p><a href="privacy.html">Privacy</a> &middot; <a href="support.html">Support</a></p>
+  <p><a href="privacy.html">Privacy</a> &middot; <a href="support.html">Support</a>
+  &middot; <a href="https://apps.apple.com/app/id6801749776">App Store</a></p>
 </footer>
 
 </main>

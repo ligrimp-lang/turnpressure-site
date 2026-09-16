@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ligrimp-lang.github.io/turnpressure-site/sitemap.xml

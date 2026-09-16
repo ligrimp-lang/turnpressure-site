@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Repetitive dive NDL at 18 m — Turn Pressure</title>
+<meta name="description" content="How much a repetitive dive shortens the NDL at 18 m on a twinset, fresh vs. an hour after a 30 m dive, as Turn Pressure's tissue model computes it — and why the total dive time doesn't shrink to match.">
+<link rel="canonical" href="https://ligrimp-lang.github.io/turnpressure-site/plan/repetitive-dive-18m.html">
+<meta name="apple-itunes-app" content="app-id=6801749776">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<main>
+
+<header>
+  <h1>Repetitive dive NDL at 18 m</h1>
+  <p>Turn Pressure — dive planner &amp; gas calculator</p>
+</header>
+
+<p>Same 18 m dive, same twinset, same diver — once fresh, once an hour after a 30 m dive.
+Turn Pressure runs the earlier dive's actual depth and time back through Bühlmann
+ZH-L16C rather than knocking a flat percentage off the fresh limit.</p>
+
+<h2>The figures</h2>
+
+<ul>
+  <li><strong>NDL limit — fresh: 43 minutes. Repetitive: 25 minutes.</strong> Residual
+  nitrogen from the earlier 30 m dive cuts the limit by 18 minutes.</li>
+  <li><strong>Minimum gas and turn pressure (halves) do not move</strong> — 40 bar and
+  136 bar in both cases, because the reserve is sized for an emergency ascent from maximum
+  depth, not for nitrogen loading.</li>
+  <li><strong>Time at maximum depth — fresh: 42.35 minutes. Repetitive: 25.29
+  minutes.</strong></li>
+  <li><strong>Total dive time — fresh: 125.69 minutes. Repetitive: 136.72
+  minutes.</strong></li>
+</ul>
+
+<p>The repetitive dive has <em>less</em> time at maximum depth but a <em>longer</em> total
+dive time. Less deep time leaves more gas unspent above the reserve, and the app spends it
+at 9 m rather than sending the diver up with a full-looking gauge — so a shorter NDL does
+not mean a shorter dive, and the app is deliberately built to show that rather than hide
+it.</p>
+
+<h2>Inputs used</h2>
+
+<ul>
+  <li>Depth: 18 m</li>
+  <li>Gas: air</li>
+  <li>Cylinder: twin steel 12 L (232 bar), started at 232 bar</li>
+  <li>SAC rate: 18 L/min</li>
+  <li>Gas strategy: halves</li>
+  <li>Conditions: calm</li>
+  <li>Limit style: NDL with safety stop</li>
+  <li>Gradient factors: 40/85 (the app's default)</li>
+  <li>Repetitive case: previous dive 30 m for 20 minutes, one hour surface interval</li>
+</ul>
+
+<p class="dim">Source: Turn Pressure's pinned etalon suite, cases 17 ("Second dive on a
+twinset, short surface interval") and 18 ("First dive on the same twinset") in
+<code>EtalonProfilesTests.swift</code> — the same pair of inputs, one fresh and one
+repetitive.</p>
+
+<p>Your training, your gauge and your computer decide the dive. This is pre-dive
+arithmetic, not a dive computer, and it does not make any dive safe.</p>
+
+<footer>
+  <p>&copy; 2026 Rustam Ismailov</p>
+  <p><a href="../index.html">Turn Pressure</a> &middot; <a href="../privacy.html">Privacy</a>
+  &middot; <a href="../support.html">Support</a></p>
+</footer>
+
+</main>
+</body>
+</html>

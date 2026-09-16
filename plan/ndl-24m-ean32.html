@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NDL and turn pressure at 24 m on EAN32 — Turn Pressure</title>
+<meta name="description" content="The no-decompression limit, minimum gas and turn pressure for a 24 m wreck dive on EAN32, as Turn Pressure computes them, with the full inputs to reproduce it.">
+<link rel="canonical" href="https://ligrimp-lang.github.io/turnpressure-site/plan/ndl-24m-ean32.html">
+<meta name="apple-itunes-app" content="app-id=6801749776">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<main>
+
+<header>
+  <h1>NDL and turn pressure at 24 m on EAN32</h1>
+  <p>Turn Pressure — dive planner &amp; gas calculator</p>
+</header>
+
+<p>A wreck at 24 m, planned on EAN32 (32% oxygen) in a current, on a single steel 12.
+Richer nitrox buys more no-decompression time than air at the same depth — here is what it
+buys on this dive.</p>
+
+<h2>The figures</h2>
+
+<ul>
+  <li><strong>NDL limit: 35 minutes</strong> (Bühlmann ZH-L16C, gradient factors
+  40/85).</li>
+  <li><strong>Minimum gas: 65 bar.</strong></li>
+  <li><strong>Turn pressure (thirds): 177 bar</strong>, reached at minute 9.6 of the
+  dive.</li>
+  <li><strong>Time at maximum depth as planned: 11.45 minutes</strong>, for a total dive
+  time of 26.61 minutes including the ascent ladder and safety stop.</li>
+</ul>
+
+<h2>Inputs used</h2>
+
+<ul>
+  <li>Depth: 24 m</li>
+  <li>Gas: EAN32</li>
+  <li>Cylinder: single steel 12 L (232 bar), started at 232 bar</li>
+  <li>SAC rate: 18 L/min</li>
+  <li>Gas strategy: thirds</li>
+  <li>Conditions: current (raises consumption above the calm-water rate)</li>
+  <li>Limit style: NDL with safety stop</li>
+  <li>Gradient factors: 40/85 (the app's default)</li>
+</ul>
+
+<p>MOD for EAN32 at the app's ppO<sub>2</sub> 1.4 hard block is 33 m, well past this dive's
+24 m — the mix is not the limiting factor here, the NDL is.</p>
+
+<p class="dim">Source: Turn Pressure's pinned etalon suite, case 4 — "Wreck at 24 m on
+EAN32" (<code>EtalonProfilesTests.swift</code>); the current total dive time is also the
+value quoted for case 4 in <code>docs/etalon-profiles.md</code>'s 2026-09-15
+re-specification, after the ascent ladder rule was extended to every dive.</p>
+
+<p>Your training, your gauge and your computer decide the dive. This is pre-dive
+arithmetic, not a dive computer, and it does not make any dive safe.</p>
+
+<footer>
+  <p>&copy; 2026 Rustam Ismailov</p>
+  <p><a href="../index.html">Turn Pressure</a> &middot; <a href="../privacy.html">Privacy</a>
+  &middot; <a href="../support.html">Support</a></p>
+</footer>
+
+</main>
+</body>
+</html>
