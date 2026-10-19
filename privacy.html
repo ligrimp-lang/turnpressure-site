@@ -23,45 +23,53 @@
 
 <p class="updated">Last updated: 19 October 2026</p>
 
-<p>Turn Pressure collects nothing. This document exists because Apple requires every app
-to have one (App Store Review Guideline 5.1.1(i)), not because there is much to
-disclose.</p>
+<p>Turn Pressure collects nothing about you. This document exists because Apple requires every
+app to have one (App Store Review Guideline 5.1.1(i)), and to say exactly where the little the
+app keeps is kept.</p>
 
 <h2>What is collected</h2>
 
 <p>Nothing. There is no account, no sign-in, no analytics, no advertising, no crash
-reporting and no third-party code of any kind in this app.</p>
+reporting and no third-party code of any kind in this app. Nothing you enter reaches the
+app's author.</p>
 
-<h2>Network access</h2>
+<h2>iCloud</h2>
 
-<p>The app makes <strong>no network requests</strong>. It contains no networking code at
-all. Nothing you enter can leave your device, because there is no mechanism by which it
-could.</p>
+<p>From version 1.9, if your iPhone is signed in to iCloud, the app keeps <strong>your divers</strong>
+and <strong>your saved briefs</strong> in <strong>your own iCloud</strong> as well as on the phone,
+using Apple's CloudKit in your private database. It needs no sign-in inside the app: it uses the
+Apple Account your iPhone is already signed in to. Your divers are shared with the other
+Diver.Today apps you use on the same Apple Account — Time to Surface, for one — so a buddy added in
+one app appears in the others. Your briefs go only to your other iPhones. Only you can read your
+private iCloud database; neither the app's author nor any other Apple Account can. Not signed in to
+iCloud, the app works exactly as before, on the phone alone.</p>
+
+<p>Nothing else uses the network.</p>
 
 <h2>What is stored, and where</h2>
 
 <ul>
-  <li><strong>Your divers and their air numbers</strong> — the people you plan for, the
+  <li><strong>Your divers and their SCR</strong> — the people you plan for, the
   breathing rates you have entered or worked out from your own dives, and the dates
-  those figures were recorded.</li>
+  those figures were recorded. On the phone and in your iCloud.</li>
   <li><strong>Your saved briefs</strong> — the depth, gas strategy, ascent profile and
-  conditions for dives you do often, under whatever names you gave them.</li>
+  conditions for dives you do often, under whatever names you gave them. On the phone and in
+  your iCloud.</li>
   <li><strong>Your last setup</strong> — the cylinder, mix and starting pressure you last
-  planned with, so the app opens where you left it.</li>
-  <li><strong>Your settings</strong> — units, conservatism and condition multipliers.</li>
+  planned with, so the app opens where you left it. On the phone only.</li>
+  <li><strong>Your settings</strong> — units, conservatism and condition multipliers. On the
+  phone only.</li>
 </ul>
 
-<p>All of it is written to a single file inside the app's own storage on your iPhone. It
-is included in your device backup, so restoring a new phone brings it back. If you back
-your phone up to iCloud, Apple's backup includes this file — that is between you and
-Apple, and it is how your data follows you to a new device. Nothing is sent to us,
-because there is no "us" to send it to.</p>
+<p>The phone's copy is a file inside the app's own storage on your iPhone, included in your
+device backup.</p>
 
 <h2>Deleting it</h2>
 
-<p>Settings &rsaquo; Start fresh clears everything the app has stored and returns it to a
-first launch. Deleting the app removes the file with it. Neither leaves a copy anywhere,
-because no copy was ever made.</p>
+<p>Delete a diver or a brief in the app and it goes from every device and app it was shared with.
+Deleting the app removes the phone's copy; what is in your iCloud stays there until you delete it,
+in your iPhone's Settings &rsaquo; your name &rsaquo; iCloud &rsaquo; Manage Account Storage, or by
+deleting the diver or brief in any of the apps.</p>
 
 <h2>Children</h2>
 
