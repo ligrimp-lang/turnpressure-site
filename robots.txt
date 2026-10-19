@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ligrimp-lang.github.io/turnpressure-site/sitemap.xml
+Sitemap: https://diver.today/turnpressure-site/sitemap.xml

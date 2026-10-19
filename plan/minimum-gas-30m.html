@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Minimum gas from 30 m: aluminium 80 vs. 15-litre steel — Turn Pressure</title>
 <meta name="description" content="How much gas two divers need to reach the surface from 30 m, worked for a 15-litre steel and an aluminium 80 cylinder. From Turn Pressure, the dive planner for iPhone.">
-<link rel="canonical" href="https://ligrimp-lang.github.io/turnpressure-site/plan/minimum-gas-30m.html">
+<link rel="canonical" href="https://diver.today/turnpressure-site/plan/minimum-gas-30m.html">
 <meta name="apple-itunes-app" content="app-id=6801749776">
 <link rel="stylesheet" href="../style.css">
 </head>
@@ -17,20 +17,29 @@
   <p>Turn Pressure — dive planner &amp; gas calculator</p>
 </header>
 
-<p>Two divers sharing one supply from 30 m need a fixed <em>volume</em> of gas to reach the
-surface with a safety stop. A small cylinder turns that volume into a much larger fraction
-of its working pressure than a large one does — the pressure answer is not one number, it
-depends on what is on your back.</p>
+<p>Two divers sharing one supply from 30 m need enough gas to reach the surface with a
+safety stop. How much depends on the cylinder <em>and</em> on how hard the team
+breathes — the pressure answer is not one number.</p>
 
 <h2>The figures</h2>
 
 <ul>
-  <li><strong>15-litre steel cylinder: 64 bar.</strong></li>
-  <li><strong>Aluminium 80 (11.1-litre): 86 bar.</strong></li>
+  <li><strong>SCR 15 L/min</strong> (the app's Light tier) — 40 bar<sup>*</sup> from a
+  15-litre steel, 46 bar from an aluminium 80.</li>
+  <li><strong>SCR 20 L/min</strong> (Typical — the default a diver gets on "Skip for
+  now") — 45 bar from a 15-litre steel, 61 bar from an aluminium 80.</li>
+  <li><strong>SCR 27 L/min</strong> (Heavy) — 61 bar from a 15-litre steel, 82 bar from an
+  aluminium 80.</li>
 </ul>
 
-<p>Same depth, same two divers, same ascent — 22 bar apart, because the smaller cylinder
-holds less gas per bar.</p>
+<p><sup>*</sup>40 bar is the app's floor — the arithmetic alone gives 33.7. Minimum gas
+never prints below it, whatever the SCR.</p>
+
+<p>Same depth, same two divers, same ascent: a heavier breather needs more, and the
+aluminium 80 needs more bar than the 15-litre steel at every tier, because the smaller
+cylinder holds less gas per bar. At the Typical rate the steel cylinder needs less than
+the 50 bar habit and the aluminium 80 needs more — the habit is not conservative for
+every cylinder, which is the point the app was built to make.</p>
 
 <h2>Inputs used</h2>
 
@@ -40,17 +49,19 @@ holds less gas per bar.</p>
   surface)</li>
   <li>Cylinders: single 15-litre steel (232 bar) and single aluminium 80 / 11.1-litre
   (207 bar)</li>
+  <li>SCR: 15, 20 and 27 L/min — the app's Light, Typical and Heavy tiers</li>
   <li>Two divers sharing one supply, at the reserve's own ascent rate</li>
 </ul>
 
-<p>Minimum gas does not depend on your gas strategy (thirds, halves or all-usable) or on
-your SAC rate — it is sized for an out-of-gas emergency at a fixed team consumption, not
-for how you plan to use the rest of the cylinder. Open Turn Pressure, set the depth to
-30 m and pick either cylinder, and the app prints the same two figures.</p>
+<p>Minimum gas does not depend on your gas strategy (thirds, halves or all-usable) — it
+is sized for an out-of-gas emergency, not for how you plan to use the rest of the
+cylinder. It does depend on your SCR, and on conditions such as a current that raise it.
+Open Turn Pressure, set the depth to 30 m, pick a cylinder and an SCR of 20 L/min, and the
+app prints the Typical row above.</p>
 
 <p class="dim">Source: the app's own pinned test suite for the figures it is sold on
-(<code>PublishedReserveFiguresTests.thirtyMetres</code>), matching the corrected 30 m pair
-in the App Store description.</p>
+(<code>PublishedReserveFiguresTests.thirtyMetres</code>), matching the corrected 30 m
+figures in the App Store description.</p>
 
 <p>Your training, your gauge and your computer decide the dive. This is pre-dive
 arithmetic, not a dive computer, and it does not make any dive safe.</p>

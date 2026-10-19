@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>NDL and turn pressure at 24 m on EAN32 — Turn Pressure</title>
 <meta name="description" content="The no-decompression limit, minimum gas and turn pressure for a 24 m wreck dive on EAN32, as Turn Pressure computes them, with the full inputs to reproduce it.">
-<link rel="canonical" href="https://ligrimp-lang.github.io/turnpressure-site/plan/ndl-24m-ean32.html">
+<link rel="canonical" href="https://diver.today/turnpressure-site/plan/ndl-24m-ean32.html">
 <meta name="apple-itunes-app" content="app-id=6801749776">
 <link rel="stylesheet" href="../style.css">
 </head>
@@ -26,11 +26,12 @@ buys on this dive.</p>
 <ul>
   <li><strong>NDL limit: 35 minutes</strong> (Bühlmann ZH-L16C, gradient factors
   40/85).</li>
-  <li><strong>Minimum gas: 65 bar.</strong></li>
-  <li><strong>Turn pressure (thirds): 177 bar</strong>, reached at minute 9.6 of the
+  <li><strong>Minimum gas: 50 bar</strong> (at an SCR of 18 L/min in a current — the
+  reserve now scales with your own breathing rate, not a fixed one).</li>
+  <li><strong>Turn pressure (thirds): 172 bar</strong>, reached at minute 10.4 of the
   dive.</li>
   <li><strong>Time at maximum depth as planned: 11.45 minutes</strong>, for a total dive
-  time of 26.61 minutes including the ascent ladder and safety stop.</li>
+  time of 28.81 minutes including the ascent levels and safety stop.</li>
 </ul>
 
 <h2>Inputs used</h2>
@@ -50,9 +51,8 @@ buys on this dive.</p>
 24 m — the mix is not the limiting factor here, the NDL is.</p>
 
 <p class="dim">Source: Turn Pressure's pinned etalon suite, case 4 — "Wreck at 24 m on
-EAN32" (<code>EtalonProfilesTests.swift</code>); the current total dive time is also the
-value quoted for case 4 in <code>docs/etalon-profiles.md</code>'s 2026-09-15
-re-specification, after the ascent ladder rule was extended to every dive.</p>
+EAN32" (<code>EtalonProfilesTests.swift</code>), re-derived on 2026-09-26 when the minimum gas
+became two divers at the diver's own SCR.</p>
 
 <p>Your training, your gauge and your computer decide the dive. This is pre-dive
 arithmetic, not a dive computer, and it does not make any dive safe.</p>
